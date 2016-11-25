@@ -1,0 +1,33 @@
+{
+  "name": "cd",
+  "dependencies": {
+    "ava": "^0.17.0",
+    "babel-eslint": "7.0.0",
+    "enzyme": "^2.6.0",
+    "next": "^1.1.2",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "standard": "8.4.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "test": "ava",
+    "lint": "standard"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015-node4",
+      "react"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "license": "ISC"
+}
