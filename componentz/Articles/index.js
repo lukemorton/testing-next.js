@@ -1,5 +1,5 @@
 import React from 'react'
-import Article from './article'
+import Article from './Article'
 import style from './style'
 
 export default ({ title, articles }) =>

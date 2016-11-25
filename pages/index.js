@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
-import Shout from '../components/shout'
-import Articles from '../components/articles'
+import Layout from '../components/Layout'
+import Shout from '../components/Shout'
+import Articles from '../components/Articles'
 import articles from '../data/articles'
 
 export default () =>

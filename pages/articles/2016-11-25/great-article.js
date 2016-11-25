@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from '../../../components/layout'
-import Article from '../../../components/article'
+import Layout from '../../../components/Layout'
+import Article from '../../../components/Article'
 
 export const title = 'A great article'
 export const author = 'Luke'

@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import Tracking from '../tracking'
+import Tracking from '../Tracking'
 import style from './style'
 
 export default ({ title, children }) =>
