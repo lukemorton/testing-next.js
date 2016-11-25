@@ -1,16 +1,12 @@
 import React from 'react'
-import css from 'next/css'
 import Layout from '../components/layout'
-import Link from 'next/link'
+import Articles from '../components/articles'
+
+const articleData = [{ title: 'Article title',
+                       href: '/blog/2016-11-25/great-article' }]
 
 export default () =>
   <Layout title="Continuous Delivery">
-    <div className={style}>
-      Hello world!
-
-      <Link href="/blog/2016-11-25/great-article">Article</Link>
-    </div>
+    <Articles title={<h2>Latest Articles</h2>}
+              articles={articleData} />
   </Layout>
-
-const style = css({
-})
