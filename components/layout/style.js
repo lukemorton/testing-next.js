@@ -15,7 +15,7 @@ const header = css({
 })
 
 const logo = css({
-  marginLeft: '-2.5em'
+  marginLeft: '-.5em'
 })
 
 const main = css({
