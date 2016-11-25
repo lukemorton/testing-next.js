@@ -4,6 +4,12 @@ import Article from '../../../components/article'
 
 export const title = 'A great article'
 export const author = 'Luke'
+export const excerpt = <p>
+  Even though JavaScript is single-threaded, IO in Node.js can happen in
+  parallel due to its async nature. AVA takes advantage of this and runs
+  your tests concurrently, which is especially beneficial for IO heavy
+  tests.
+</p>
 
 export default () =>
   <Layout title={title}>

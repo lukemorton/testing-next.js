@@ -4,9 +4,11 @@ import style from './style'
 
 export default ({ title, articles }) =>
   <div className={style.articles}>
-    {title}
+    <header className={style.header}>
+      {title}
+    </header>
 
-    <ul>
+    <ul className={style.list}>
       {articles.map((article, index) => <Article key={index} {...article} />)}
     </ul>
   </div>
