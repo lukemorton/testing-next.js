@@ -14,7 +14,10 @@ export default ({ title, children }) =>
     </Head>
 
     <header className={style.header}>
-      <Link href="/"><img src="/static/logo.png" /></Link>
+      <Link href="/">
+        <img src="/static/logo.png"
+             className={style.logo} />
+      </Link>
     </header>
 
     <main className={style.main}>

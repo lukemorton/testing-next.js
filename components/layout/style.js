@@ -12,10 +12,14 @@ const header = css({
   ...constrained
 })
 
+const logo = css({
+  marginLeft: '-2.5em'
+})
+
 const main = css({
   display: 'block',
   paddingTop: '5em',
   ...constrained
 })
 
-export default { header, main }
+export default { header, logo, main }
