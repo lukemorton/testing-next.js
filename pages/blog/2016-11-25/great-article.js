@@ -1,2 +1,10 @@
 import React from 'react'
-export default () => <div>Article</div>
+import Link from 'next/link'
+import Layout from '../../../components/layout'
+
+export default () =>
+  <Layout title="Article">
+    <div>
+      <p>Article</p>
+    </div>
+  </Layout>
