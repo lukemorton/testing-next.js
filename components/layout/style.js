@@ -18,7 +18,7 @@ const logo = css({
 
 const main = css({
   display: 'block',
-  paddingTop: '5em',
+  paddingTop: '3em',
   ...constrained
 })
 
