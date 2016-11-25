@@ -7,8 +7,6 @@ export default ({ title, articles }) =>
     {title}
 
     <ul>
-      <li>
-        {articles.map((article) => <Article {...article} />)}
-      </li>
+      {articles.map((article, index) => <Article key={index} {...article} />)}
     </ul>
   </div>
