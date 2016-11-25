@@ -2,10 +2,13 @@ import React from 'react'
 import Layout from '../../../components/layout'
 import Article from '../../../components/article'
 
+export const title = 'A great article'
+export const author = 'Luke'
+
 export default () =>
-  <Layout title="A great article">
-    <Article title={<h1>A great article</h1>}
-             author="Luke">
+  <Layout title={title}>
+    <Article title={<h1>{title}</h1>}
+             author={author}>
       <p>
         Even though JavaScript is single-threaded, IO in Node.js can happen in
         parallel due to its async nature. AVA takes advantage of this and runs
