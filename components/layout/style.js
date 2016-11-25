@@ -1,13 +1,21 @@
 import css from 'next/css'
 
+const constrained = {
+  margin: '0 auto',
+  width: '50em'
+}
+
 const header = css({
   display: 'block',
-  padding: '10px'
+  paddingTop: '5em',
+  textAlign: 'center',
+  ...constrained
 })
 
 const main = css({
   display: 'block',
-  padding: '10px'
+  paddingTop: '5em',
+  ...constrained
 })
 
 export default { header, main }
