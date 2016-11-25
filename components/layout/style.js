@@ -2,12 +2,14 @@ import css from 'next/css'
 
 const constrained = {
   margin: '0 auto',
-  width: '50em'
+  '@media (min-width: 50em)': {
+    width: '50em'
+  }
 }
 
 const header = css({
   display: 'block',
-  paddingTop: '5em',
+  paddingTop: '4em',
   textAlign: 'center',
   ...constrained
 })

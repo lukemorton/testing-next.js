@@ -10,7 +10,7 @@ export default ({ title, children }) =>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="stylesheet" href="/static/base.css" />
+      <link rel="stylesheet" href="/static/typography.css" />
     </Head>
 
     <header className={style.header}>

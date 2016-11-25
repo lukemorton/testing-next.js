@@ -1,7 +1,7 @@
 import css from 'next/css'
 
 const shout = css({
-  fontSize: '1.2em',
+  fontSize: '1.1em',
   textAlign: 'center'
 })
 

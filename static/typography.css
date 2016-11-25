@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Gotham';
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+@media (min-width: 60em) {
+  body {
+    font-size: 18px;
+  }
+}
