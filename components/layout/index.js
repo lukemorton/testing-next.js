@@ -10,10 +10,11 @@ export default ({ title, children }) =>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link rel="stylesheet" href="/static/base.css" />
     </Head>
 
     <header className={style.header}>
-      <Link href="/">home</Link>
+      <Link href="/"><img src="/static/logo.png" /></Link>
     </header>
 
     <main className={style.main}>
