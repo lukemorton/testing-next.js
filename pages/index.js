@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import Shout from '../components/Shout'
+import Gallery from '../components/Gallery'
 import Articles from '../components/Articles'
 import Glyph from '../components/Glyph'
 import articles from '../data/articles'
@@ -13,6 +14,12 @@ export default () =>
         Improving software delivery in every organisation
       </h1>
     </Shout>
+
+    <Gallery>
+      <img src="/static/office/team.jpg" />
+      <img src="/static/office/laptop.jpg" />
+      <img src="/static/office/crows.jpg" />
+    </Gallery>
 
     <Glyph />
 
