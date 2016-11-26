@@ -2,7 +2,6 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Glyph from '../Glyph'
-import Footer from '../Footer'
 import Tracking from '../Tracking'
 import style from './style'
 
@@ -25,8 +24,6 @@ export default ({ title, children }) =>
     <main className={style.main}>
       {children}
     </main>
-
-
 
     <footer className={style.footer}>
       <p>
