@@ -4,6 +4,7 @@ import Article from '../../components/article'
 
 export const title = 'A great article'
 export const author = 'Luke'
+export const publishedAt = '25th November 2016'
 export const excerpt =
   <p>
     Even though JavaScript is single-threaded, IO in Node.js can happen in
@@ -15,7 +16,8 @@ export const excerpt =
 export default () =>
   <Layout title={title}>
     <Article title={<h1>{title}</h1>}
-             author={author}>
+             author={author}
+             publishedAt={publishedAt}>
       <p>
         Even though JavaScript is single-threaded, IO in Node.js can happen in
         parallel due to its async nature. AVA takes advantage of this and runs

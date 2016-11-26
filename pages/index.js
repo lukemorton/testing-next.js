@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Layout from '../components/Layout'
 import Shout from '../components/Shout'
 import Articles from '../components/Articles'
@@ -6,7 +7,7 @@ import Glyph from '../components/Glyph'
 import articles from '../data/articles'
 
 export default () =>
-  <Layout title="Continuous Delivery">
+  <Layout title="Made Tech - Improving software delivery in every organisation">
     <Shout>
       <h1>
         Improving software delivery in every organisation
@@ -16,5 +17,6 @@ export default () =>
     <Glyph />
 
     <Articles title={<h2>Latest Articles</h2>}
-              articles={articles} />
+              articles={articles}
+              finalLink={<Link href="/articles">See all articles</Link>} />
   </Layout>

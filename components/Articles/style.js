@@ -29,4 +29,8 @@ const articleExcerpt = css({
   },
 })
 
-export default { articles, header, list, article, articleHeaderTitle, articleExcerpt }
+const footer = css({
+  paddingTop: '2em'
+})
+
+export default { articles, header, list, article, articleHeaderTitle, articleExcerpt, footer }

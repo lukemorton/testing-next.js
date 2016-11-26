@@ -8,10 +8,11 @@ const ArticleHeaderTitle = ({ title, href }) =>
     <Link href={href}>{title}</Link>
   </div>
 
-export default ({ title, author, href, excerpt }) =>
+export default ({ title, author, publishedAt, href, excerpt }) =>
   <li className={style.article}>
     <ArticleHeader title={<ArticleHeaderTitle title={title} href={href} />}
-                   author={author} />
+                   author={author}
+                   publishedAt={publishedAt} />
 
     <div className={style.articleExcerpt}>
       {excerpt}
