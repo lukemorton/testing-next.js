@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import Glyph from '../Glyph'
+import Footer from '../Footer'
 import Tracking from '../Tracking'
 import style from './style'
 
@@ -24,5 +26,14 @@ export default ({ title, children }) =>
       {children}
     </main>
 
+
+
+    <footer className={style.footer}>
+      <p>
+        <small><Glyph color="green" inline /></small>
+        <strong>MadeTech</strong> are a software engineering organisation
+        based in Southwark, London.
+      </p>
+    </footer>
     <Tracking />
   </div>

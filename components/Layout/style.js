@@ -24,4 +24,11 @@ const main = css({
   ...constrained
 })
 
-export default { header, logo, main }
+const footer = css({
+  display: 'block',
+  padding: '8em 0 4em',
+  textAlign: 'center',
+  ...constrained
+})
+
+export default { header, logo, main, footer }
