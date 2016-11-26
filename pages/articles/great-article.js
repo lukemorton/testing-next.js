@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/layout'
+import Page from '../../components/Page'
 import Article from '../../components/article'
 
 export const title = 'A great article'
@@ -14,7 +14,7 @@ export const excerpt =
   </p>
 
 export default () =>
-  <Layout title={title}>
+  <Page title={title}>
     <Article
       title={<h1>{title}</h1>}
       author={author}
@@ -37,4 +37,4 @@ export default () =>
     </Article>
 
 
-  </Layout>
+  </Page>
