@@ -10,17 +10,8 @@ const article = css({
   }
 })
 
-const header = css({
-  paddingTop: '1em',
-  textAlign: 'center'
-})
-
-const author = css({
-  paddingTop: '1em'
-})
-
 const main = css({
   paddingTop: '2em'
 })
 
-export default { article, header, author, main }
+export default { article, main }

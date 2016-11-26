@@ -35,6 +35,10 @@ a {
   color: #37b348;
 }
 
+a:hover, a:focus {
+  color: #1e8b12;
+}
+
 @media (min-width: 40em) {
   body {
     font-size: 18px;

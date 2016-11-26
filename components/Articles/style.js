@@ -17,8 +17,9 @@ const article = css({
   paddingTop: '2em'
 })
 
-const articleTitle = css({
-  fontSize: '1.4em'
+const articleHeaderTitle = css({
+  fontSize: '1.4em',
+  fontWeight: 'bold'
 })
 
 const articleExcerpt = css({
@@ -28,4 +29,4 @@ const articleExcerpt = css({
   },
 })
 
-export default { articles, header, list, article, articleTitle, articleExcerpt }
+export default { articles, header, list, article, articleHeaderTitle, articleExcerpt }
