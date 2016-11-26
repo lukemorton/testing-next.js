@@ -6,7 +6,7 @@ const shout = css({
   textAlign: 'center',
   '@media (min-width: 40em)': {
     fontSize: '1em',
-    padding: '0 6em',
+    padding: '0 6em'
   }
 })
 

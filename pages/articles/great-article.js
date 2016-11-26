@@ -15,9 +15,10 @@ export const excerpt =
 
 export default () =>
   <Layout title={title}>
-    <Article title={<h1>{title}</h1>}
-             author={author}
-             publishedAt={publishedAt}>
+    <Article
+      title={<h1>{title}</h1>}
+      author={author}
+      publishedAt={publishedAt}>
       <p>
         Even though JavaScript is single-threaded, IO in Node.js can happen in
         parallel due to its async nature. AVA takes advantage of this and runs
@@ -34,4 +35,6 @@ export default () =>
         state of other tests, which is a great thing!
       </p>
     </Article>
+
+
   </Layout>

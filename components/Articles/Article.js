@@ -10,9 +10,10 @@ const ArticleHeaderTitle = ({ title, href }) =>
 
 export default ({ title, author, publishedAt, href, excerpt }) =>
   <li className={style.article}>
-    <ArticleHeader title={<ArticleHeaderTitle title={title} href={href} />}
-                   author={author}
-                   publishedAt={publishedAt} />
+    <ArticleHeader
+      title={<ArticleHeaderTitle title={title} href={href} />}
+      author={author}
+      publishedAt={publishedAt} />
 
     <div className={style.articleExcerpt}>
       {excerpt}

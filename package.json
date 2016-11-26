@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "next",
     "test": "ava",
-    "lint": "standard"
+    "lint": "standard",
+    "build": "standard && ava"
   },
   "ava": {
     "require": [

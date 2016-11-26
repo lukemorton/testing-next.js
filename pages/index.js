@@ -7,7 +7,7 @@ import Glyph from '../components/Glyph'
 import articles from '../data/articles'
 
 export default () =>
-  <Layout title="Made Tech - Improving software delivery in every organisation">
+  <Layout title='Made Tech - Improving software delivery in every organisation'>
     <Shout>
       <h1>
         Improving software delivery in every organisation
@@ -16,7 +16,8 @@ export default () =>
 
     <Glyph />
 
-    <Articles title={<h2>Latest Articles</h2>}
-              articles={articles}
-              finalLink={<Link href="/articles">See all articles</Link>} />
+    <Articles
+      title={<h2>Latest Articles</h2>}
+      articles={articles}
+      finalLink={<Link href='/articles'>See all articles</Link>} />
   </Layout>
