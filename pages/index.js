@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Page from '../components/Page'
+import Constrained from '../components/Constrained'
+import Calm from '../components/Calm'
 import Shout from '../components/Shout'
 import Gallery from '../components/Gallery'
 import Articles from '../components/Articles'
@@ -15,24 +17,39 @@ export default class extends React.Component {
   render () {
     return (
       <Page title='Made Tech - Improving software delivery in every organisation'>
-        <Shout>
-          <h1>
-            Improving software delivery in every organisation
-          </h1>
-        </Shout>
+        <Constrained>
+          <Calm>
+            <em>We are software engineers with a vision</em>
+          </Calm>
+
+          <Shout>
+            <h1>
+              To improve software delivery in every organisation
+            </h1>
+          </Shout>
+
+          <Calm>
+            <em>
+              We transform the way your company looks at software by providing
+              a team of experts
+            </em>
+          </Calm>
+        </Constrained>
 
         <Gallery>
-          <img src="/static/office/team.jpg" />
-          <img src="/static/office/laptop.jpg" />
-          <img src="/static/office/crows.jpg" />
+          <img src="/static/office/team.jpg" style={{ width: '33.333%' }} />
+          <img src="/static/office/laptop.jpg" style={{ width: '33.333%' }} />
+          <img src="/static/office/crows.jpg" style={{ width: '33.333%' }} />
         </Gallery>
 
         <Glyph />
 
-        <Articles
-          title={<h2>Latest Articles</h2>}
-          articles={this.props.articles}
-          finalLink={<Link href='/articles'>See all articles</Link>} />
+        <Constrained>
+          <Articles
+            title={<h2>Latest Articles</h2>}
+            articles={this.props.articles}
+            finalLink={<Link href='/articles'>See all articles</Link>} />
+        </Constrained>
       </Page>
     )
   }

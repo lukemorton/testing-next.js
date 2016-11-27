@@ -23,10 +23,7 @@ const articleHeaderTitle = css({
 })
 
 const articleExcerpt = css({
-  padding: '1em 2em 0 2em',
-  '@media (min-width: 40em)': {
-    padding: '1em 8em 0 8em'
-  }
+  paddingTop: '1em'
 })
 
 const footer = css({

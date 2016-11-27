@@ -22,9 +22,7 @@ export default ({ title, children }) =>
       </Link>
     </header>
 
-    <main className={style.main}>
-      {children}
-    </main>
+    {children}
 
     <footer className={style.footer}>
       <p>
@@ -33,5 +31,6 @@ export default ({ title, children }) =>
         based in Southwark, London.
       </p>
     </footer>
+
     <Tracking />
   </div>
