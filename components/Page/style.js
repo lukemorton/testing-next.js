@@ -3,6 +3,7 @@ import css from 'next/css'
 const header = css({
   display: 'block',
   paddingTop: '4em',
+  paddingBottom: '1em',
   textAlign: 'center'
 })
 
