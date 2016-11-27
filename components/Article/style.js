@@ -1,16 +1,12 @@
-import css from 'next/css'
+import style from 'next/css'
 
-const article = css({
-  padding: '0 2em',
-  '@media (min-width: 40em)': {
-    padding: '0 6em'
-  },
+const article = style({
   '& p': {
     paddingTop: '2em'
   }
 })
 
-const main = css({
+const main = style({
   paddingTop: '2em'
 })
 
