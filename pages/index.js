@@ -27,19 +27,24 @@ export default class extends React.Component {
               To improve software delivery in every organisation
             </h1>
           </Shout>
+        </Constrained>
 
+        <Gallery>
+          <img src='/static/office/laptop.jpg' style={{ width: '50%' }} />
+          <img src='/static/office/tail.jpg' style={{ width: '50%' }} />
+        </Gallery>
+
+        <Constrained>
           <Calm>
             <em>
-              We transform the way your company looks at software by providing
-              a team of experts
+              We transform the way your organisation looks at software by
+              providing a team of experts
             </em>
           </Calm>
         </Constrained>
 
         <Gallery>
-          <img src="/static/office/team.jpg" style={{ width: '33.333%' }} />
-          <img src="/static/office/laptop.jpg" style={{ width: '33.333%' }} />
-          <img src="/static/office/crows.jpg" style={{ width: '33.333%' }} />
+          <img src='/static/office/logo.jpg' style={{ width: '80%' }} />
         </Gallery>
 
         <Glyph />

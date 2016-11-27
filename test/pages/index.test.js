@@ -17,9 +17,9 @@ test('contains gallery', t => {
   const page = shallow(<Index />)
   t.is(page.find(Gallery).length, 1)
   t.true(page.find(Gallery).contains([
-    <img src='/static/office/team.jpg' style={{ width: '33.333%' }} />,
     <img src='/static/office/laptop.jpg' style={{ width: '33.333%' }} />,
-    <img src='/static/office/crows.jpg' style={{ width: '33.333%' }} />
+    <img src='/static/office/logo.jpg' style={{ width: '33.333%' }} />,
+    <img src='/static/office/tail.jpg' style={{ width: '33.333%' }} />
   ]))
 })
 
