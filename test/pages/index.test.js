@@ -4,16 +4,17 @@ import { shallow } from 'enzyme'
 import Shout from '../../components/Shout'
 import Gallery from '../../components/Gallery'
 import Articles from '../../components/Articles'
-import index from '../../pages'
+import Article from '../../components/Articles/Article'
+import Index from '../../pages'
 
-test('index contains shoutout', t => {
-  const page = shallow(index())
+test('contains shoutout', t => {
+  const page = shallow(<Index />)
   t.is(page.find(Shout).length, 1)
   t.true(page.find(Shout).contains('Improving software delivery in every organisation'))
 })
 
-test('index contains gallery', t => {
-  const page = shallow(index())
+test('contains gallery', t => {
+  const page = shallow(<Index />)
   t.is(page.find(Gallery).length, 1)
   t.true(page.find(Gallery).contains([
     <img src='/static/office/team.jpg' />,
@@ -22,7 +23,9 @@ test('index contains gallery', t => {
   ]))
 })
 
-test('index contains articles', t => {
-  const page = shallow(index())
+test('contains articles', t => {
+  const mockArticles = [{ title: 'Nice article' }, { title: 'Another article' }]
+  const page = shallow(<Index articles={mockArticles} />)
   t.is(page.find(Articles).length, 1)
+  t.is(page.find(Articles).shallow().find(Article).length, 2)
 })
