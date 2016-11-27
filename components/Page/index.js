@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
+import Header from '../Header'
 import Glyph from '../Glyph'
 import Tracking from '../Tracking'
 import style from './style'
@@ -14,13 +14,7 @@ export default ({ title, children }) =>
       <link rel='stylesheet' href='/static/typography.css' />
     </Head>
 
-    <header className={style.header}>
-      <Link href='/'>
-        <img
-          src='/static/logo.png'
-          className={style.logo} />
-      </Link>
-    </header>
+    <Header />
 
     {children}
 
