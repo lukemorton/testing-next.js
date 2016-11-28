@@ -4,6 +4,7 @@ import Page from '../components/Page'
 import Constrained from '../components/Constrained'
 import Shout from '../components/Shout'
 import Gallery from '../components/Gallery'
+import SideBySide from '../components/SideBySide'
 import Articles from '../components/Articles'
 import Glyph from '../components/Glyph'
 import articles from '../data/articles'
@@ -35,13 +36,16 @@ export default class extends React.Component {
         </Constrained>
 
         <Gallery>
-          <img src='/static/office/board.jpg' style={{ width: '35%' }} />
+          <SideBySide smaller>
+            <img src='/static/office/board.jpg' />
+          </SideBySide>
 
-          <div style={{ margin: '0 4%', width: '42%' }}>
+          <SideBySide larger>
             <h2>We live software engineering.</h2>
+
             <p>
               We write software.
-              We can help rescue projects and systems.
+              We help rescue projects and systems.
               We evolve delivery processes.
               We hire your next CTO and engineering team.
             </p>
@@ -50,21 +54,22 @@ export default class extends React.Component {
               We are experts in transforming large organisations into agile
               machines.
             </p>
-          </div>
+          </SideBySide>
         </Gallery>
 
         <Gallery>
-          <div style={{ margin: '0 4%', width: '42%' }}>
+          <SideBySide larger>
             <h2>We teach continuous delivery.</h2>
             <p>
-              We write software.
-              We can help rescue projects and systems.
-              We evolve delivery processes.
-              We hire CTOs and engineering teams for you.
+              We enable your business to move faster with modern software
+              engineering practices. Continuous delivery is at the heart of our
+              value to your organisation.
             </p>
-          </div>
+          </SideBySide>
 
-          <img src='/static/office/ladder.jpg' style={{ width: '35%' }} />
+          <SideBySide smaller>
+            <img src='/static/office/ladder.jpg' />
+          </SideBySide>
         </Gallery>
 
         <Shout>

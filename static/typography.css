@@ -43,6 +43,10 @@ a:hover, a:focus {
   color: #1e8b12;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media (min-width: 40em) {
   body {
     font-size: 18px;
