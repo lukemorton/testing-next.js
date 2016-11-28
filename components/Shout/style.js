@@ -1,13 +1,22 @@
 import style from 'next/css'
 
-const shout = ({ calmly }) => {
+const shout = ({ calmly, wider }) => {
   if (calmly) {
-    return style({
+    const shoutCalmly = style({
       fontSize: '1.6em',
       color: 'rgba(0, 0, 0, .5)',
       padding: '2em 0 1em 0',
       textAlign: 'center'
     })
+
+    if (wider) {
+      return style.merge(shoutCalmly, {
+        display: 'block',
+        margin: '0 -2.5em 0 -2.5em'
+      })
+    } else {
+      return shoutCalmly;
+    }
   } else {
     return style({
       textShadow: '0px 0px 6px rgba(255, 255, 255, .7)',

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './style'
 
-export default ({ background, calmly, children }) => {
+export default ({ background, calmly, wider, children }) => {
   if (background) {
     return (
       <div className={style.shout({ background, calmly })}>
@@ -18,7 +18,7 @@ export default ({ background, calmly, children }) => {
     )
   } else {
     return (
-      <div className={style.shout({ calmly })}>
+      <div className={style.shout({ calmly, wider })}>
         {children}
       </div>
     )

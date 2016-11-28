@@ -26,8 +26,8 @@ export default class extends React.Component {
             </h1>
           </Shout>
 
-          <Shout calmly>
-            <em style={{ display: 'block', margin: '0 -2.5em 0 -2.5em' }}>
+          <Shout calmly wider>
+            <em>
               We transform the way organisations think about software, helping
               them deliver quality software, continuously.
             </em>
