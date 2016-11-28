@@ -5,8 +5,8 @@ import Glyph from '../Glyph'
 import Tracking from '../Tracking'
 import style from './style'
 
-export default ({ title, children }) =>
-  <div>
+export default ({ title, backgroundImageSrc, children }) =>
+  <div className={style.page({ backgroundImageSrc })}>
     <Head>
       <title>{title}</title>
       <meta charSet='utf-8' />

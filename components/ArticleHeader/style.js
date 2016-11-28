@@ -1,7 +1,7 @@
 import css from 'next/css'
 
 const header = css({
-  paddingTop: '1em',
+  paddingTop: '2em',
   textAlign: 'center'
 })
 

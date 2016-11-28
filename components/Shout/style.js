@@ -5,7 +5,7 @@ const shout = ({ calmly }) => {
     return style({
       fontSize: '1.6em',
       color: 'rgba(0, 0, 0, .5)',
-      paddingTop: '1em',
+      padding: '2em 0 1em 0',
       textAlign: 'center'
     })
   } else {
@@ -15,7 +15,7 @@ const shout = ({ calmly }) => {
       paddingTop: '2em',
       textAlign: 'center',
       '@media (min-width: 40em)': {
-        fontSize: '1.1em',
+        fontSize: '1em',
       }
     })
   }

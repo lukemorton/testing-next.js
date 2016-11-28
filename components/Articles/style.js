@@ -2,7 +2,7 @@ import css from 'next/css'
 
 const articles = css({
   display: 'block',
-  paddingTop: '4em',
+  paddingTop: '2em',
   textAlign: 'center'
 })
 

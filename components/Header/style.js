@@ -4,13 +4,9 @@ const header = style({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  paddingTop: '2em',
+  padding: '3em',
   paddingBottom: '4em',
-  textAlign: 'center',
-  '@media (min-width: 50em)': {
-    margin: '0 auto',
-    width: '50em'
-  }
+  textAlign: 'center'
 })
 
 const logo = style({

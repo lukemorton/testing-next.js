@@ -15,47 +15,70 @@ export default class extends React.Component {
 
   render () {
     return (
-      <Page title='Made Tech - Improving software delivery in every organisation'>
+      <Page
+        title='Made Tech - Improving software delivery in every organisation'
+        backgroundImageSrc='/static/background.png'
+        >
         <Constrained>
-          <Shout calmly>
-            <em>We are software engineers with a vision</em>
+          <Shout>
+            <h1>
+              Improving software delivery in every organisation.
+            </h1>
           </Shout>
-        </Constrained>
 
-        <Shout
-          background={
-            <img src='/static/office/ladder.jpg' style={{ maxWidth: '22.9em' }} />
-          }>
-          <h1>
-            To improve software delivery in every organisation
-          </h1>
-        </Shout>
-
-        <Constrained>
           <Shout calmly>
-            <em>
-              We transform the way your organisation looks at software by
-              providing engineering power
+            <em style={{ display: 'block', margin: '0 -2.5em 0 -2.5em' }}>
+              We transform the way organisations think about software, helping
+              them deliver quality software, continuously.
             </em>
           </Shout>
         </Constrained>
 
-
         <Gallery>
-          <img src='/static/office/board.jpg' style={{ width: '50%' }} />
+          <img src='/static/office/board.jpg' style={{ width: '35%' }} />
 
           <div style={{ margin: '0 4%', width: '42%' }}>
-            <Shout calmly>
-              <em>
-                But we aren't just devs for hire, we seek to replace ourselves in
-                your organisation with a sustainable delivery process
-              </em>
-            </Shout>
+            <h2>We live software engineering.</h2>
+            <p>
+              We write software.
+              We can help rescue projects and systems.
+              We evolve delivery processes.
+              We hire your next CTO and engineering team.
+            </p>
+
+            <p>
+              We are experts in transforming large organisations into agile
+              machines.
+            </p>
           </div>
         </Gallery>
 
         <Gallery>
-          <img src='/static/office/logo.jpg' style={{ maxWidth: '40em', width: '100%' }} />
+          <div style={{ margin: '0 4%', width: '42%' }}>
+            <h2>We teach continuous delivery.</h2>
+            <p>
+              We write software.
+              We can help rescue projects and systems.
+              We evolve delivery processes.
+              We hire CTOs and engineering teams for you.
+            </p>
+          </div>
+
+          <img src='/static/office/ladder.jpg' style={{ width: '35%' }} />
+        </Gallery>
+
+        <Shout>
+          <h2>
+            Work with us
+          </h2>
+
+          <p>
+            We are always looking for our next adventure.
+          </p>
+        </Shout>
+
+        <Gallery>
+          <img src='/static/office/logo.jpg' style={{ maxWidth: '30em', width: '100%' }} />
         </Gallery>
 
         <Glyph />
