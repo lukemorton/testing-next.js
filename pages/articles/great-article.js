@@ -35,6 +35,4 @@ export default () =>
         state of other tests, which is a great thing!
       </p>
     </Article>
-
-
   </Page>
