@@ -5,7 +5,7 @@ const gallery = style({
   flexFlow: 'row wrap',
   alignItems: 'center',
   justifyContent: 'space-between',
-  maxWidth: '54em',
+  maxWidth: '60em',
   margin: '0 auto',
   padding: '3em 2em 0 2em'
 })

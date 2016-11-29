@@ -4,7 +4,7 @@ const shout = ({ calmly, wider }) => {
   if (calmly) {
     const shoutCalmly = style({
       fontSize: '1.6em',
-      color: 'rgba(0, 0, 0, .5)',
+      color: '#808080',
       padding: '2em 0 1em 0',
       textAlign: 'center'
     })

@@ -4,7 +4,7 @@ const header = style({
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '3em',
-  paddingBottom: '4em',
+  paddingBottom: '3em',
   textAlign: 'center',
   '@media (min-width: 55em)': {
     display: 'flex'

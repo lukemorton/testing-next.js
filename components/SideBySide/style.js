@@ -1,11 +1,15 @@
 import style from 'next/css'
 
 const smaller = style({
-  width: '40%'
+  '@media (min-width: 40em)': {
+    width: '40%'
+  }
 })
 
 const larger = style({
-  width: '50%'
+  '@media (min-width: 40em)': {
+    width: '50%'
+  }
 })
 
 export default { smaller, larger }

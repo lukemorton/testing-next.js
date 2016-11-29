@@ -42,18 +42,17 @@ export default class extends React.Component {
           </SideBySide>
 
           <SideBySide larger>
-            <h2>We live software engineering.</h2>
+            <h2>We are software strategists.</h2>
 
             <p>
-              We write software.
-              We help rescue projects and systems.
-              We evolve delivery processes.
-              We hire your next CTO and engineering team.
+              We write software and shape long term software strategy. We define
+              roadmaps, evolve delivery processes, hire CTO's and entire
+              engineering teams.
             </p>
 
             <p>
-              We are experts in transforming large organisations into agile
-              machines.
+              We are most useful when we can embed our delivery culture at
+              every level of our customers organisations.
             </p>
           </SideBySide>
         </Gallery>
