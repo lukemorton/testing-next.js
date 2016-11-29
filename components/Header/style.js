@@ -1,24 +1,31 @@
 import style from 'next/css'
 
 const header = style({
-  display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '3em',
   paddingBottom: '4em',
-  textAlign: 'center'
+  textAlign: 'center',
+  '@media (min-width: 55em)': {
+    display: 'flex'
+  }
 })
 
 const logo = style({
   display: 'block',
   marginLeft: '-.5em',
+  textAlign: 'center',
   '& > img': {
-    display: 'block'
+    display: 'inline-block'
   }
 })
 
 const nav = style({
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
   '& > a': {
+    // whiteSpace: 'nowrap',
     paddingLeft: '1em'
   }
 })

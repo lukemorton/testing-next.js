@@ -12,7 +12,9 @@ const shout = ({ calmly, wider }) => {
     if (wider) {
       return style.merge(shoutCalmly, {
         display: 'block',
-        margin: '0 -2.5em 0 -2.5em'
+        '@media (min-width: 50em)': {
+          margin: '0 -2.5em 0 -2.5em',
+        }
       })
     } else {
       return shoutCalmly;

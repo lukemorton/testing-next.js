@@ -5,6 +5,7 @@ import Constrained from '../components/Constrained'
 import Shout from '../components/Shout'
 import Gallery from '../components/Gallery'
 import SideBySide from '../components/SideBySide'
+import WhiterContent from '../components/WhiterContent'
 import Articles from '../components/Articles'
 import Glyph from '../components/Glyph'
 import articles from '../data/articles'
@@ -59,12 +60,14 @@ export default class extends React.Component {
 
         <Gallery>
           <SideBySide larger>
-            <h2>We teach continuous delivery.</h2>
-            <p>
-              We enable your business to move faster with modern software
-              engineering practices. Continuous delivery is at the heart of our
-              value to your organisation.
-            </p>
+            <WhiterContent>
+              <h2>We teach continuous delivery.</h2>
+              <p>
+                We enable your business to move faster with modern software
+                engineering practices. Continuous delivery is at the heart of our
+                value to your organisation.
+              </p>
+            </WhiterContent>
           </SideBySide>
 
           <SideBySide smaller>
@@ -73,13 +76,15 @@ export default class extends React.Component {
         </Gallery>
 
         <Shout>
-          <h2>
-            Work with us
-          </h2>
+          <WhiterContent>
+            <h2>
+              Work with us
+            </h2>
 
-          <p>
-            We are always looking for our next adventure.
-          </p>
+            <p>
+              We are always looking for our next adventure.
+            </p>
+          </WhiterContent>
         </Shout>
 
         <Gallery>

@@ -4,8 +4,12 @@ const page = ({ backgroundImageSrc }) => {
   if (backgroundImageSrc) {
     return style({
       backgroundImage: `url(${backgroundImageSrc})`,
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '80em',
+      backgroundPosition: 'top center',
+      '@media (min-width: 85em)': {
+        backgroundSize: 'contain'
+      }
     })
   } else {
     return style({})
