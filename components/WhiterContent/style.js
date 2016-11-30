@@ -1,18 +1,23 @@
 import style from 'next/css'
 
 const whiter = ({ minWidth, maxWidth } = {}) =>
-  withMediaQuery({ minWidth, maxWidth }) || withoutMediaQuery()
+  style(withMediaQuery({ minWidth, maxWidth }) || withoutMediaQuery())
 
 const withoutMediaQuery = () => {
-  return { color: 'white',
-           textShadow: '1px 1px 0px #8bb77f' }
+  return {
+    color: 'white',
+    textShadow: '1px 1px 0px #8bb77f',
+    '& > *': {
+      color: 'white'
+    }
+  }
 }
 
 const withMediaQuery = ({ minWidth, maxWidth }) => {
   const mq = mediaQuery({ minWidth, maxWidth })
 
   if (mq) {
-    return { [mq]: withoutMediaQuery }
+    return { [mq]: withoutMediaQuery() }
   }
 }
 
