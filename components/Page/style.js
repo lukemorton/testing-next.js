@@ -8,6 +8,7 @@ const page = ({ backgroundImageSrc }) => {
       backgroundSize: '80em',
       backgroundPosition: 'top center',
       '@media (min-width: 85em)': {
+        backgroundPosition: '0 -2.5em',
         backgroundSize: 'contain'
       }
     })

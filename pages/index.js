@@ -19,7 +19,7 @@ export default class extends React.Component {
     return (
       <Page
         title='Made Tech - Improving software delivery in every organisation'
-        backgroundImageSrc='/static/background.png'
+        backgroundImageSrc='/static/background.jpg'
         >
         <Constrained>
           <Shout>
@@ -34,30 +34,41 @@ export default class extends React.Component {
               them deliver quality software, continuously.
             </em>
           </Shout>
+
+          <Shout>
+            <h2>We write software.</h2>
+            <h2>We deliver change.</h2>
+          </Shout>
         </Constrained>
 
         <Gallery>
-          <SideBySide smaller>
-            <img src='/static/office/board.jpg' />
+          <SideBySide larger>
+            <WhiterContent>
+              <h2>We are software strategists.</h2>
+
+              <p>
+                We write software and shape long term software strategy. We define
+                roadmaps, evolve delivery processes, hire CTO's and entire
+                engineering teams.
+              </p>
+
+              <p>
+                We are most useful when we can embed our delivery culture at
+                every level of our customers organisations.
+              </p>
+            </WhiterContent>
           </SideBySide>
 
-          <SideBySide larger>
-            <h2>We are software strategists.</h2>
-
-            <p>
-              We write software and shape long term software strategy. We define
-              roadmaps, evolve delivery processes, hire CTO's and entire
-              engineering teams.
-            </p>
-
-            <p>
-              We are most useful when we can embed our delivery culture at
-              every level of our customers organisations.
-            </p>
+          <SideBySide smaller>
+            <img src='/static/office/board.jpg' />
           </SideBySide>
         </Gallery>
 
         <Gallery>
+          <SideBySide smaller>
+            <img src='/static/office/ladder.jpg' />
+          </SideBySide>
+
           <SideBySide larger>
             <WhiterContent>
               <h2>We teach continuous delivery.</h2>
@@ -68,26 +79,24 @@ export default class extends React.Component {
               </p>
             </WhiterContent>
           </SideBySide>
-
-          <SideBySide smaller>
-            <img src='/static/office/ladder.jpg' />
-          </SideBySide>
         </Gallery>
 
-        <Shout>
-          <WhiterContent>
-            <h2>
-              Work with us
-            </h2>
-
-            <p>
-              We are always looking for our next adventure.
-            </p>
-          </WhiterContent>
-        </Shout>
-
         <Gallery>
-          <img src='/static/office/logo.jpg' style={{ maxWidth: '30em', width: '100%' }} />
+          <SideBySide larger>
+            <WhiterContent>
+              <h2>
+                Work with us
+              </h2>
+
+              <p>
+                We are always looking for our next adventure.
+              </p>
+            </WhiterContent>
+          </SideBySide>
+
+          <SideBySide smaller>
+            <img src='/static/office/logo.jpg' />
+          </SideBySide>
         </Gallery>
 
         <Glyph />

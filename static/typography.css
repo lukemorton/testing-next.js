@@ -5,12 +5,14 @@
 }
 
 body {
+  color: #808080;
   font-family: helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
+  color: #000;
   font-family: 'Gotham';
   font-weight: bold;
 }
@@ -32,7 +34,6 @@ h4 {
 }
 
 p {
-  color: #808080;
   padding-top: 1.4em;
 }
 
